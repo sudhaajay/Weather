@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Weather App</h1>
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchBtn">Search</button>
+            <button id="resetBtn">Reset</button> <!-- Reset button -->
+        </div>
+        <div id="weatherDisplay" class="weather-info">
+            <h2 class="city-name" id="cityName"></h2>
+            <p class="weather-text" id="temperature"></p>
+            <p class="weather-text" id="humidity"></p>
+            <p class="weather-text" id="wind"></p> <!-- Wind speed -->
+        </div>
+        <footer class="footer">
+            <p>Designed and developed by Sudha Ajay © 2024</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

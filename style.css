@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    transition: background 0.5s ease-in-out; /* Smooth transition */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Container */
+.container {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Space between elements */
+    height: 80%; /* Full height for the container */
+}
+
+/* Title */
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-style: italic; /* Italic font style */
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-style: italic; /* Italic font style */
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Weather Info */
+.weather-info {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.city-name {
+    font-size: 2rem;
+    font-style: italic; /* Italic font style */
+}
+
+.weather-text {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-style: italic; /* Italic font style */
+}
+
+/* Footer styling for the 'Created by Sudha Ajay' text */
+.footer {
+    margin-top: 20px; /* Space between weather info and footer */
+    font-size: 0.9em;
+    color: white;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Footer hover effect */
+.footer:hover {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .search-box input, .search-box button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search-box button {
+        width: auto;
+    }
+}
+#resetBtn{
+    margin-left: 10px;
+}
